@@ -30,7 +30,7 @@ getIsInvalid num =
 
 
 
-
+-- For part 2
 
 getIsInvalid2 :: Int -> Bool
 getIsInvalid2 num = 
@@ -58,16 +58,6 @@ getDivisibles :: Int -> [Int]
 getDivisibles x = 
     let validOnes = [1..x-1] in
     filter (\y -> rem x y == 0) validOnes
-
-
-
--- Given length, get the list of divisible factors
--- Convert to list based on that rule each time
--- Then compare if all sequences are equal to each other 
-    -- return true if that is the case
-
-
-
 
 data Range = Range Int Int deriving (Show)
 

@@ -21,7 +21,7 @@ turnDial (x:xs) curr =
         0 -> (turnDial xs 0) + 1
         _ -> (turnDial xs newcurr)
 
--- turnDial is used for part 2
+-- turnDial2 is used for part 2
 turnDial2 :: [Operation] -> Integer -> Integer
 turnDial2 [] curr = 0
 turnDial2 (x:xs) curr = 
